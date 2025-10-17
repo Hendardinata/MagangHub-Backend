@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def home():
-    return jsonify({"message": "Flask MVC (tanpa Blueprint) + MongoDB Atlas Bank API 🚀"})
+    return jsonify({"API customers is Running!"})
 
 # Rute
 app.add_url_rule("/customers", view_func=customer_controller.index, methods=["GET"])

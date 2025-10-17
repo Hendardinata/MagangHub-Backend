@@ -14,7 +14,7 @@ def serialize_customer(customer):
 def validate_customer_data(data, is_update=False):
     errors = {}
 
-    # Field wajib (hanya untuk create)
+    # Create
     required_fields = ["name", "email", "account_number"]
 
     if not is_update:
